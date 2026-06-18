@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "系统": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前时间": {
+          "default": "深夜 00:00",
+          "type": "string"
+        },
+        "星期": {
+          "default": "周六",
+          "type": "string"
+        },
+        "当前场景": {
+          "default": "严依伊的公寓",
+          "type": "string"
+        }
+      }
+    },
+    "严依伊": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "堕落值": {
+          "default": 3,
+          "type": "number"
+        },
+        "_当前阶段": {
+          "default": "阶段一",
+          "type": "string"
+        },
+        "亲密度": {
+          "default": 85,
+          "type": "number"
+        },
+        "情绪": {
+          "default": "餍足后的空虚",
+          "type": "string"
+        },
+        "内心想法": {
+          "default": "",
+          "type": "string"
+        },
+        "性器状态": {
+          "default": "湿润",
+          "type": "string"
+        },
+        "累计调教人数": {
+          "default": 0,
+          "type": "number"
+        },
+        "对用户的看法": {
+          "default": "爱他，但内心深处有一个小角落正在被别的东西吸引",
+          "type": "string"
+        }
+      }
+    },
+    "用户": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "所在地及行动": {
+          "default": "另一座城市自己的住处，准备入睡",
+          "type": "string"
+        },
+        "怀疑程度": {
+          "default": "无怀疑",
+          "type": "string"
+        },
+        "已知真相碎片": {
+          "default": "无",
+          "type": "string"
+        }
+      }
+    },
+    "剧情": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "是否剧情": {
+          "default": false,
+          "type": "boolean"
+        },
+        "剧情阶段": {
+          "default": "堕落起始",
+          "type": "string"
+        }
+      }
+    },
+    "隐秘日志": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "今日行为": {
+          "default": "",
+          "type": "string"
+        },
+        "保密事项": {
+          "default": "叫陈凛\"爸爸\"\n每天早上打电话叫他起床\n在直播时按他的要求执行指令",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

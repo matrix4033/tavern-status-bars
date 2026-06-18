@@ -1,0 +1,69 @@
+:root {
+  --c-bg: #1a1a2e;
+  --c-card: rgba(30, 30, 58, 0.85);
+  --c-card-border: rgba(255, 255, 255, 0.06);
+  --c-text: #e0d8e8;
+  --c-text-muted: #8a7f9a;
+  --c-love: #ff6b9d;
+  --c-love-glow: rgba(255, 107, 157, 0.3);
+  --c-corruption: #8b5cf6;
+  --c-corruption-glow: rgba(139, 92, 246, 0.3);
+  --c-warning: #f59e0b;
+  --c-divider: rgba(255, 255, 255, 0.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  background: var(--c-card);
+  border: 1px solid var(--c-card-border);
+  border-radius: 8px;
+  padding: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.card-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--c-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bar-container {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: visible;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+  position: relative;
+}
